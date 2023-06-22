@@ -70,7 +70,7 @@ After modifying the data inputs, the users can run Hi-BDiSCO by executing the fo
 
 3) `./run_part2_BD_reconstruction.sh`                                   -> Perform BD simulations to fold the target region of chromosome based on the Hi-C restraints (submitting HPC jobs, output/org_sys/bd/run-code.sbatch should be modified accordingly)
 
-4) `./run_part3_MC_subsequent_simulation.sh`                            -> Perform MC simulations to taking account the affects of tail acetylation, linker histion, etc., and solve spatial problems (submitting HPC jobs, output/org_sys/mc/sub_batch.s should be modified accordingly)
+4) `./run_part3_MC_subsequent_simulation.sh`                            -> Perform MC simulations to take into account the effects of tail acetylation, linker histone, etc., and solve spatial problems (submitting HPC jobs, output/org_sys/mc/sub_batch.s should be modified accordingly)
 
 
 ## Outputs
