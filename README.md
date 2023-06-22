@@ -1,10 +1,10 @@
 # Hi-BDiSCO
 
-#### System Requirement ####
+## System Requirement 
 
 The binary executables (under bin/ directory) are compiled to run on the popular Linux CentOS 7, RedHat/Roky 7 and 8, Ubuntu 20 and 22 platforms. They work with both Intel and AMD CPUs. 
 
-#### Dependencies ####
+## Dependencies 
 
 1) MC simulation:
 
@@ -19,10 +19,10 @@ The binary bin/code for BD simulation requires
 Python scripts under src/ requires following libs:
 
 pyBigWig 0.3.18  
-cooler 0.8.11
+cooler 0.8.11  
 numpy 1.18.5  
 
-#### Data Input Preparation ####
+## Data Input Preparation
 
 1) Experimental data:
 
@@ -46,19 +46,19 @@ The inputs can be modified via input.txt:
 
 For the default example:
 
-chr = chr18                                                           -> chromosome number
-start = 58110000                                                      -> chromosome start
-end = 58150000                                                        -> chromosome end
-nucleosome_position = data/nucleosome_position.bed                    -> nucleosome position file location (optional, if not provided, life-like fiber will be generated)
-tail_acetylation = data/tail_acetylation.narrowPeak                   -> tail acetylation file location (optional, if not provided, wildtype tail will be used)
-LH = data/LH.bw                                                       -> linker histone file location (optional, if not provided, random occupancy of LH will be assigned based on the LH density)
-LH_ratio = 0.5                                                        -> linker histone density
-Hi-C = data/Hi-C-sample.mcool                                         -> Hi-C-like map location
-Hi-C-path = /resolutions/50                                           -> path name of the Hi-C-like map file
-N_rep = 1000                                                          -> number of replicas to distribute restraints
-N_sim = 100                                                           -> number of simulations to be performed
+chr = chr18                                                           -> chromosome number  
+start = 58110000                                                      -> chromosome start  
+end = 58150000                                                        -> chromosome end  
+nucleosome_position = data/nucleosome_position.bed                    -> nucleosome position file location (optional, if not provided, life-like fiber will be generated)  
+tail_acetylation = data/tail_acetylation.narrowPeak                   -> tail acetylation file location (optional, if not provided, wildtype tail will be used)  
+LH = data/LH.bw                                                       -> linker histone file location (optional, if not provided, random occupancy of LH will be assigned based on the LH density)  
+LH_ratio = 0.5                                                        -> linker histone density  
+Hi-C = data/Hi-C-sample.mcool                                         -> Hi-C-like map location  
+Hi-C-path = /resolutions/50                                           -> path name of the Hi-C-like map file  
+N_rep = 1000                                                          -> number of replicas to distribute restraints  
+N_sim = 100                                                           -> number of simulations to be performed  
 
-#### Run simulation ####
+## Run simulation 
 
 After modify the data inputs, the users can run the simulation by execute the following shell scripts:
 
