@@ -2,21 +2,21 @@
 
 ## System Requirement 
 
-The binary executables (under bin/ directory) are compiled to run on the popular Linux CentOS 7, RedHat/Roky 7 and 8, Ubuntu 20 and 22 platforms. They work with both Intel and AMD CPUs. 
+The binary executables (under bin/ directory) are compiled to run on the popular `Linux CentOS 7, RedHat/Roky 7 and 8, Ubuntu 20 and 22` platforms. They work with both Intel and AMD CPUs. 
 
 ## Dependencies 
 
-1) MC simulation:
+1) Monte Carlo (MC) simulation:
 
-The binary bin/chrom_ap1.x for MC simulation requires `OpenMPI --version >= 4`
+The binary `bin/chrom_ap1.x` for MC simulation requires `OpenMPI --version >= 4`
 
-2) BD simulation:
+2) Brownian Dynamics (BD) simulation:
 
-The binary bin/code for BD simulation requires 
+The binary `bin/code` for BD simulation requires 
 
-3) Initial struction generation:
+3) Initial structure generation:
 
-Python scripts under src/ requires following libs:
+Python scripts under `src/` requires following libs:
 
 ```
 pyBigWig 0.3.18  
@@ -28,7 +28,7 @@ numpy 1.18.5
 
 1) Experimental data:
 
-The experimental data are under data/ directory (example data are provided).
+The experimental data are under `data/` directory (example data are provided).
 
 For the example data:
 
@@ -44,7 +44,7 @@ The users can replace these data with their own data of interest.
 
 2) Inputs:
 
-The inputs can be modified via input.txt:
+The inputs can be modified via `input.txt`:
 
 For the default example:
 
@@ -62,7 +62,7 @@ For the default example:
 
 ## Run simulation 
 
-After modify the data inputs, the users can run the simulation by execute the following shell scripts:
+After modifying the data inputs, the users can run Hi-BDiSCO by executing the following shell scripts:
 
 1) `./file_preparation.sh`                                              -> Prepare the input files for MC and BD code based on the provided experimental files
 
@@ -73,4 +73,12 @@ After modify the data inputs, the users can run the simulation by execute the fo
 4) `./run_part3_MC_subsequent_simulation.sh`                            -> Perform MC simulations to taking account the affects of tail acetylation, linker histion, etc., and solve spatial problems (submitting HPC jobs, output/org_sys/mc/sub_batch.s should be modified accordingly)
 
 
+## Outputs
 
+The structures after each step are all stored.
+
+The initial N_sim random structures are under `output/simulation/random_ini/`, with subfolders named copy_1 to copy_N (N=N_sim). The `snapshot.pdb` under these folders are the initial random structures in `PDB` format.
+
+The structures after BD simulations are under `output/simulation/BD/`. Likewise, there are copy_1 to copy_N subfolders, and `out.xyz` are the structures after BD in `XYZ` format.
+
+The structures after MC simulations are under `output/simulation/MC/`. The `snapshot.pdb` under copy_1 to copy_N subfolders are the final reconstructed structures in `PDB` format.
