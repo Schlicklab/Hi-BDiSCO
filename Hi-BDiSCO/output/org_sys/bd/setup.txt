@@ -1,0 +1,16 @@
+$ configuration file for the Monte Carlo simulation
+Temperature             293.15         $ simulation temperature
+number_of_steps         100000        $ number of steps in the simulation
+frequency_of_sampling   100          $ sampling frequency (data is saved to file every # steps)
+frequency_RP            20              $ Rotne Prager update frequency. For BD simulations only.
+evd_DNA_DNA             3.6            $ excluded volume distance for DNA-DNA VdW interactions
+evd_DNA_Core            2.4            $ excluded volume distance for DNA-Core VdW interactions
+evd_Core_Core           1.2            $ excluded volume distance for Core-Core VdW interactions
+evd_Tail_Tail           1.8            $ excluded volume distance for Tail-Tail VdW interactions
+evd_Tail_DNA            2.7            $ excluded volume distance for Tail-DNA VdW interactions
+evd_Tail_Core           1.8            $ excluded volume distance for Tail-Core VdW interactions
+Mg                      1              $ Mg=0 means no Mg, and Mg=1 means simulation with Mg
+Cs			0.12	       $Concentration
+restart			1	       $Restart
+unbind                  0             
+Pbind                   0             
