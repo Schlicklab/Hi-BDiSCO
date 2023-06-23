@@ -1,0 +1,11 @@
+chr = chr18
+start = 58110000
+end = 58150000
+nucleosome_position = data/nucleosome_position.bed
+tail_acetylation = data/tail_acetylation.narrowPeak
+LH = data/LH.bw
+LH_ratio = 0.5
+Hi-C = data/Hi-C-sample.mcool
+Hi-C-path = /resolutions/50
+N_rep = 1000
+N_sim = 100
