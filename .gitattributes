@@ -1,2 +1,0 @@
-*.mcool filter=lfs diff=lfs merge=lfs -text
-*.bw filter=lfs diff=lfs merge=lfs -text
