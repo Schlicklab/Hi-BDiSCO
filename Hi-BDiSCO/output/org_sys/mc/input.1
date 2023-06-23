@@ -1,0 +1,36 @@
+T         Cs        steps     restart   freq      Pglob     Ptran     Prota     Ptgrw 
+293.15     0.150    10000000         0      100000      .15       .05       .05       0.75
+t_bcr     deltas    1/2/3               ntrials 
+1.12      0.06       1.4       1         10       
+corefile              tailfile          foldedfile                 fold_eligibility_file          
+core_data.reg.150mM tail_data.mod.200mM folded_tail_data.mod.200mM fold_elig.dat  
+P_swap tail_spec (0=all,1=H3,2=H4,3=H3,H4,4=H2A,5=H2B,6=H2AC)
+.000     0
+Fix_fold_conc? Target_Conc (H3_max=32,H4_max=20,H3,H4_max=52,H2A_max=16,H2B_max=18,H2AC_max=12,All_max=100) 
+T     29
+Apply boundary? force_c radius_coef update_freq(must be multiple) radius_start radius_finish
+F               100              .9    10000                         42           35
+Linker/Linker_Prob Max_Conc cons_dist cons_fk unbind_freq ll_elig_file	
+.00                  15        3       2      0          ll_elig.dat
+gen seed? seed
+T	  10  
+gen Twist? DNA_twist(phi_o)
+T          0
+Magnesium flag
+0
+Non-parental LH
+1
+ProbLH  deltaLH
+.06 0.6
+pre(Ec Ev LH/lDNA)
+.66 1.0
+[LH]  mode(0=assign by[LH],1=read LHbound.0.in, 2=assign by LHnum)  LHnum
+0     1    50 
+Verbose Output
+F
+Sim Annealing (0=none,1=linear anneal,2=trill)
+0 0 0
+Write PDB? write_pdb_freq
+T 10000
+Write bp_matrix? freq cutoff
+T  1E6 2
