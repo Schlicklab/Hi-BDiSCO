@@ -1,0 +1,2 @@
+Hi-C-sample.mcool filter=lfs diff=lfs merge=lfs -text
+LH.bw filter=lfs diff=lfs merge=lfs -text
