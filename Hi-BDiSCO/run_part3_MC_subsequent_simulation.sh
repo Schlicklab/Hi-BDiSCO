@@ -9,7 +9,7 @@ cp ../../../../src/bd2fortran.py .
 cp ../../../../src/run_bd2f.sh .
 ./run_bd2f.sh
 rm run_bd2f.sh bd2fortran.py
-cp ../../../org_sys/mc ../../MC/$i
+cp -r ../../../org_sys/mc ../../MC/$i
 cp 1.dat ../../MC/$i
 cp ../../../../bin/chrom_ap1.x ../../MC/$i
 cp ../../../ini_struct/1.dat ../../MC/$i/
