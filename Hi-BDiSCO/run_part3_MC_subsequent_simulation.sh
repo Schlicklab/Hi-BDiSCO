@@ -20,7 +20,7 @@ cp ../../../ini_struct/ll_elig.dat ../../MC/$i/
 cd ..
 done
 
-cd ../../MC
+cd ../MC
 for i in copy_*
 do
 cd $i
