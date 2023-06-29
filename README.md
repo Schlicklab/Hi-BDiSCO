@@ -12,7 +12,10 @@ The binary `bin/chrom_ap1.x` for MC simulation requires `OpenMPI --version >= 4`
 
 2) Brownian Dynamics (BD) simulation:
 
-The binary `bin/code` for BD simulation requires 
+The binary `bin/code` for BD simulation requires Nvidia GPU V100 or A100, and the code is compiled with `cuda-11.6.2`.
+
+Environment `cuda-11.6.2` can be obtained by downloading docker file `nvidia/cuda:11.6.2-runtime-ubuntu20.04` from Docker Hub, or install using conda `conda install -c "nvidia/label/cuda-11.6.2" cuda-toolkit`
+
 
 3) Initial structure generation:
 
